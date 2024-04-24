@@ -51,8 +51,9 @@ echo -ne "
                Enabling (and Theming) Login Display Manager
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed i3 lightdm
-systemctl enable lightdm.service
+pacman -S --noconfirm --needed gnome gdm
+systemctl enable gdm.service
+systemctl start gdm
 
 echo -ne "
 -------------------------------------------------------------------------
