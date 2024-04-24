@@ -59,6 +59,7 @@ echo -ne "
                Enabling (and Theming) Login Display Manager
 -------------------------------------------------------------------------
 "
+pacman -S --noconfirm --needed gnome gdm
 systemctl enable gdm.service
 
 echo -ne "
